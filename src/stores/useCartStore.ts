@@ -1,10 +1,10 @@
 import { ref } from "vue"
 
-import { CartItem, Product } from "../interfaces"
+import { ICartItem, IProduct } from "../interfaces"
 
-let cart = ref<CartItem[]>([])
+let cart = ref<ICartItem[]>([])
 
-function addToCart(product: Product) {
+function addToCart(product: IProduct) {
   cart.value.push({ ...product, quantity: 1 })
 }
 
