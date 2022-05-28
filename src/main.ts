@@ -1,17 +1,11 @@
-import { createApp } from 'vue'
-import PrimeVue from "primevue/config"
-import ToastService from "primevue/toastservice"
-
-import "primevue/resources/primevue.min.css"
-import "primevue/resources/themes/md-dark-indigo/theme.css"
-import "primeicons/primeicons.css"
-import "primeflex/primeflex.min.css"
+import { createApp } from "vue"
 
 import App from './App.vue'
 import router from './router'
 
+import "./assets/styles/index.css"
+import "css.gg/icons/all.css"
+
 const app = createApp(App)
-app.use(PrimeVue)
-app.use(ToastService)
 app.use(router)
 app.mount('#app')

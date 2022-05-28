@@ -1,13 +1,10 @@
 <script setup lang="ts">
-import Toast from "primevue/toast"
-
 import CartSidebar from "./components/CartSidebar.vue"
 </script>
 
 <template>
   <router-view />
-  <CartSidebar />
-  <Toast />
+  <!-- <CartSidebar /> -->
 </template>
 
 <style>

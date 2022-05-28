@@ -1,4 +1,4 @@
-import dummy from "./fake-products.json"
+import dummy from "../assets/data/fake-products.json"
 import { Product } from "../interfaces"
 
 class FakeProducts {
