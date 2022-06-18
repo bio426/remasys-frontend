@@ -13,10 +13,14 @@ const { showSidebar } = useSidebar()
 let productsList = new FakeProducts()
 let products = ref<IProduct[]>([])
 products.value = productsList.get()
+
+fetch("http://127.0.0.1:8000/ping")
+	.then(() => console.log("Connected to API"))
+	.catch(() => console.log("Can`t connect to server"))
 </script>
 
 <template>
-	<div class="w-screen min-h-screen py-4">
+	<div class="w-screen min-h-screen">
 		<div class="w-11/12 mx-auto">
 			<h1 class="mb-4 text-center">Products</h1>
 			<button class="mb-4 mr-4 bg-pink-200" @click="showSidebar('CartContent')">

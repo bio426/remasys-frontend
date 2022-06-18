@@ -1,9 +1,5 @@
 <script setup lang="ts">
-import useSidebar from "./composables/useSidebar"
-
-import Sidebar from "./components/Sidebar.vue"
-
-const { showSidebar } = useSidebar()
+import Sidebar from "./components/sidebar/Sidebar.vue"
 </script>
 
 <template>
@@ -20,10 +16,5 @@ const { showSidebar } = useSidebar()
 	box-sizing: border-box;
 	font-family: "Lato", sans-serif;
 	font-family: "Open Sans", sans-serif;
-}
-
-.active-sidebar {
-	height: 100%;
-	overflow: hidden;
 }
 </style>

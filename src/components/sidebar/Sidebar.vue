@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import useSidebar from "../composables/useSidebar"
+import useSidebar from "../../composables/useSidebar"
 
-import UserContent from "./sidebar/User.vue"
-import CartContent from "./sidebar/Cart.vue"
+import UserContent from "./User.vue"
+import CartContent from "./Cart.vue"
 
 const { isVisible, sidebarContent, hideSidebar } = useSidebar()
 

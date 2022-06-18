@@ -2,6 +2,7 @@
 import { PropType } from "vue"
 
 import { IProduct } from "../interfaces"
+import useCartStore from "../stores/useCartStore";
 
 const props = defineProps({
 	product: {
@@ -9,6 +10,12 @@ const props = defineProps({
 		required: true,
 	},
 })
+
+const {addToCart} = useCartStore()
+
+function cartAction(){
+	addToCart(props.product)
+}
 </script>
 
 <template>
@@ -19,7 +26,7 @@ const props = defineProps({
 			<p>{{ props.product.description }}</p>
 		</div>
 		<div class="flex gap-4 w-full p-4">
-			<button class="w-full py-2 bg-slate-500 text-white rounded font-bold">
+			<button class="w-full py-2 bg-slate-500 text-white rounded font-bold" @click="cartAction">
 				Add to cart
 			</button>
 			<button
