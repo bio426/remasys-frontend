@@ -23,9 +23,9 @@ function register() {
 <template>
 	<div class="w-screen min-h-screen">
 		<div class="w-11/12 mx-auto">
-			<h1 class="mb-4 text-center">Register</h1>
+			<h1 class="mb-4 text-center">Auth</h1>
 			<hr />
-			<label class="block">
+			<label class="block bg-gr">
 				Email:
 				<input class="block" type="text" v-model="data.email" />
 			</label>
